@@ -7,6 +7,7 @@ Today’s vulnerability reporting is centralized, slow, and opaque. Security res
 By building on Polkadot’s infrastructure, CrowdSec ensures high scalability, true decentralization, and cross-chain compatibility in future expansions. Polkadot’s robust security model allows trustless verification without relying on centralized gatekeepers.
 
 ## Demo Video
+[https://drive](https://drive.google.com/file/d/1narlfnWEZKbSVq-vVy_F1VZQD_pODzTg/view?usp=sharing)
 
 ## Screenshots
 https://drive.google.com/drive/folders/1w-Xl5p58B-_EuH4uPsuUE6wjKnVHp5iL?usp=drive_link
