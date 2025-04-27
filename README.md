@@ -11,6 +11,9 @@ By building on Polkadot’s infrastructure, CrowdSec ensures high scalability, t
 ## Screenshots
 https://drive.google.com/drive/folders/1w-Xl5p58B-_EuH4uPsuUE6wjKnVHp5iL?usp=drive_link
 
+## Presentation
+https://www.canva.com/design/DAGl0qrAoSs/jKH99HOuqjOQBBUIJIql4A/edit
+
 ## Technical Description (SDKs + Polkadot features used)
 
 CrowdSec was developed using:
