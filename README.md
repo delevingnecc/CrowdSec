@@ -28,3 +28,10 @@ Key Polkadot features that made this possible:
 - Native Wallet Integration: Seamless connection through polkadot.js extension made it easy to interact securely.
 - Interoperability: Built on Polkadot’s cross-chain future, enabling CrowdSec to later integrate with other parachains or bridges.
 This approach enabled rapid smart contract development without setting up a full blockchain node, perfectly fitting a hackathon timeline.
+
+Note:
+During deployment, we encountered an initcode size limitation, where the combined constructor logic and contract runtime bytecode exceeded 52,738 bytes, surpassing Westend’s maximum deployment size of 49,152 bytes as enforced under EIP-3860.
+This size restriction, critical for protecting the network against oversized or malicious deployments, was surfaced through MetaMask’s rejection error. To address this, we activated the Solidity optimizer in Remix (targeting 200 runs) to aggressively minimize bytecode size by eliminating dead code and compressing lengthy revert strings.
+Additionally, we are modularizing the smart contract architecture — refactoring heavier logic into separate library contracts, which will be deployed independently and linked at runtime to the main contract.
+If necessary, we are prepared to adopt a minimal-proxy (EIP-1167) pattern, dramatically reducing on-chain payloads by using lightweight proxy instances pointing to shared implementation contracts.
+These optimizations ensure the final deployment remains compliant with Westend’s size constraints while maintaining full functionality, scalability, and upgradeability.
